@@ -48,6 +48,10 @@ button:hover {
     font-size: 30px;
 }
 
+#reset {
+    font-size: 17px;
+}
+
 .counter-structure {
     display: flex;
     flex-direction: column;
