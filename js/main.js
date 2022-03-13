@@ -33,5 +33,3 @@ decr.addEventListener('click', decrement);
 incr.addEventListener('click', increment);
 reset.addEventListener('click', timerReset);
 number.addEventListener('wheel', wheelFunc);
-
-//prova
