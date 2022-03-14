@@ -4,85 +4,77 @@
         url('/fonts/Digital-7.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Digital-7', sans-serif;
-    background-color: wheat;
+    background-color: #e7e7e7;
     box-sizing: border-box;
 }
 
-.wrapper {
-    margin-top: 220px;
+#page {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid red;
 }
 
-.counter-buttons {
-    max-width: 700px;
-    margin: 0 auto;
+#counter {
+    padding: 0 5%;
+}
+
+#buttons-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 button {
-    width: 100px;
-    height: 40px;
-    background-color: rgb(51, 51, 51);
+    width: clamp(70px, 10vw, 90px);
+    height: 35px;
+    background-color: #5e5e5e;
     border: black solid 3px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    line-height: 0px;
+    font-size: 20px;
 }
 
 button:hover {
     background-color: rgb(109, 109, 109);
 }
 
-#decr { 
-    margin-left: 30px;
-    font-size: 40px;
-}
-
-#incr {
-    margin-right: 30px;
-    font-size: 30px;
-}
-
 #reset {
-    font-size: 17px;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
-.counter-structure {
+#counter-display {
     display: flex;
     flex-direction: column;
-    max-width: 700px;
-    min-height: 300px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 60px 3vw;
     color: red;
     background-color: black;
-    border: solid 15px rgb(51, 51, 51);
-    border-radius: 10px;
+    border: solid 15px #5e5e5e;
+    border-radius: 7px;
     box-shadow: 0 0 0 3px black;
 }
 
-.luca-counter-text {
-    font-size: 50px;
-    text-align: center;
+#counter-text {
+    font-size: clamp(50px, 10vw, 80px);
     letter-spacing: 7px;
+    margin-bottom: 40px;
 }
 
 #number {
-    font-size: 80px;
-    text-align: center;
+    font-size: clamp(50px, 10vw, 80px);
 }
 
 @media screen and (max-width: 615px) {
-
-    .counter-structure {
-        min-height: 450px;
-    }
-
-    .luca-counter-text {
-        line-height: 90px;
+    #counter-text {
+        line-height: 60px;
     }
 }

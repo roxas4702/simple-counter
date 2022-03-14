@@ -5,12 +5,12 @@ let reset = document.getElementById('reset');
 let num = document.getElementById('number');
 let int = 0;
 
-function decrement() {
+function decrementNum() {
     int--;
     num.innerHTML = int;
 }
 
-function increment() {
+function incrementNum() {
     int++;
     num.innerHTML = int;
 }
@@ -20,16 +20,17 @@ function timerReset() {
     num.innerHTML = int;
 }
 
+//change number by scrolling wheel
 function wheelFunc(event) {
     if (event.deltaY < 0) {
-        increment();
+        incrementNum();
     }
     else if (event.deltaY > 0){
-        decrement();
+        decrementNum();
     }
 }
 
-decr.addEventListener('click', decrement);
-incr.addEventListener('click', increment);
+decr.addEventListener('click', decrementNum);
+incr.addEventListener('click', incrementNum);
 reset.addEventListener('click', timerReset);
 number.addEventListener('wheel', wheelFunc);
