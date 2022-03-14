@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Digital-7';
-    src: url('/fonts/Digital-7.woff') format('woff'),
-        url('/fonts/Digital-7.woff2') format('woff2');
+    src: url('/fonts/Digital-7.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,7 +19,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid red;
 }
 
 #counter {
@@ -33,7 +31,7 @@ body {
 }
 
 button {
-    width: clamp(70px, 10vw, 90px);
+    width: clamp(70px, 19vw, 90px);
     height: 35px;
     background-color: #5e5e5e;
     border: black solid 3px;
@@ -61,20 +59,11 @@ button:hover {
     border: solid 15px #5e5e5e;
     border-radius: 7px;
     box-shadow: 0 0 0 3px black;
+    font-size: clamp(50px, 15vw, 80px);
 }
 
 #counter-text {
-    font-size: clamp(50px, 10vw, 80px);
     letter-spacing: 7px;
-    margin-bottom: 40px;
-}
-
-#number {
-    font-size: clamp(50px, 10vw, 80px);
-}
-
-@media screen and (max-width: 615px) {
-    #counter-text {
-        line-height: 60px;
-    }
+    margin-bottom: 50px;
+    line-height: 70px;
 }
