@@ -1,23 +1,34 @@
-let decr = document.getElementById('decr');
-let incr = document.getElementById('incr');
-let reset = document.getElementById('reset');
+const buttonsWrapper = document.getElementById('buttons-wrapper');
+const counterDisplay = document.getElementById('counter-display')
 
-let num = document.getElementById('number');
+//create buttons
+const decr = document.createElement('button');
+const reset = document.createElement('button');
+reset.id = ('reset');
+const incr = document.createElement('button');
+buttonsWrapper.append(decr, reset, incr);
+
+decr.innerHTML = '-';
+reset.innerHTML = 'RESET';
+incr.innerHTML = '+';
+
+//create number and set his value to 0
+const number = document.createElement('div');
 let int = 0;
+number.innerHTML = (int);
+counterDisplay.appendChild(number);
 
 function decrementNum() {
-    int--;
-    num.innerHTML = int;
+    number.innerHTML = (int -= 1);
 }
 
 function incrementNum() {
-    int++;
-    num.innerHTML = int;
+    number.innerHTML = (int += 1);
 }
 
 function timerReset() {
     int = 0;
-    num.innerHTML = int;
+    number.innerHTML = int;
 }
 
 //change number by scrolling wheel
