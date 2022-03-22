@@ -7,4 +7,4 @@ You can also change the value by pressing left/right arrow or "-" and "+" on you
 
 ![NEW3](https://user-images.githubusercontent.com/98349290/158578294-7b868c2e-c3ed-4ae2-a25b-693bc6085f72.png)
 
-[Click here to try it!](https://luca-counter.netlify.app/)
+[Click here to try it!](https://lucacounter.netlify.app/)
